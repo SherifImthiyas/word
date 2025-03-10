@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Inline, Internal & Selectors</title>
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .box {
+            width: 200px;
+            padding: 20px;
+            background-color: lightblue;
+            text-align: center;
+            font-weight: bold;
+        }
+        #unique-box {
+            background-color: lightcoral;
+        }
+        p:hover {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Inline CSS -->
+        <div class="box" style="border: 2px solid black;">Inline CSS</div>
+        
+        <!-- Internal CSS -->
+        <div class="box" id="unique-box">Internal CSS</div>
+        
+        <!-- Element selector & Hover effect -->
+        <p>Hover over this text to see the color change.</p>
+    </div>
+</body>
+</html>
